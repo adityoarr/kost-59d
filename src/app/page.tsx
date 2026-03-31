@@ -24,10 +24,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="home-content min-h-screen font-sans text-zinc-900">
+    <div className="home-content min-h-screen font-sans text-zinc-900" style={{ margin: 0, padding: 0 }}>
       {/* Google Fonts */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@400;500;600&display=swap');
+
+        html, body {
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow-x: hidden;
+        }
 
         .home-content, .home-content * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -44,10 +50,14 @@ export default function Home() {
         .hero {
           position: relative;
           height: 58vh;
-          width: 100%;
+          width: 100vw;
           overflow: hidden;
           margin: 0;
           padding: 0;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;
+          margin-right: -50vw;
         }
 
         .hero img {
