@@ -5,13 +5,13 @@ export default function Resident() {
   const whatsappUrl = `https://wa.me/6285755125790?text=${message}`;
 
   return (
-    <div className="flex flex-col min-h-screen w-full overflow-x-hidden font-sans text-zinc-900 dark:text-zinc-100 bg-white dark:bg-zinc-950">
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden font-sans text-zinc-900 bg-white">
       <main className="flex flex-1 w-full max-w-2xl mx-auto flex-col px-6 py-2 md:py-2 gap-16 box-border">
         
         {/* Section 1: Promo Benefit Umum */}
         <section className="w-full space-y-6">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 text-sm font-medium">
               <Sparkles size={14} />
               <span>More than just a stay</span>
             </div>
@@ -21,13 +21,13 @@ export default function Resident() {
                 Dapatkan benefit eksklusifnya!
               </span>
             </h1>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-prose">
+            <p className="text-zinc-600 leading-relaxed max-w-prose">
               Di sini kamu bisa dapat banyak keuntungan tambahan selain tempat tinggal yang nyaman. Penasaran? Yuk, cek sekarang!
             </p>
           </div>
 
           {/* Form & Tombol Benefit - Hidden Mode */}
-          <div className="w-full max-w-md p-6 border-2 border-dashed border-zinc-200 dark:border-zinc-800 rounded-2xl bg-zinc-50/50 dark:bg-zinc-900/50 text-center">
+          <div className="w-full max-w-md p-6 border-2 border-dashed border-zinc-200 rounded-2xl bg-zinc-50/50 text-center">
             <p className="text-sm font-medium text-zinc-500">
               🚀 <span className="italic">Hang tight!</span> Fitur cek benefit lagi kita racik biar makin gokil. Tungguin ya!
             </p>
@@ -39,26 +39,26 @@ export default function Resident() {
           </div>
         </section>
 
-        <hr className="border-zinc-200 dark:border-zinc-800 w-full" />
+        <hr className="border-zinc-200 w-full" />
 
         {/* Section 2: Alumni Kost Putri 59D */}
         <section className="w-full space-y-6">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 text-rose-600 text-sm font-medium">
               <UserCheck size={14} />
               <span>Special for Alumni</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
               Buat kamu Alumni Kost Putri 59D
             </h2>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-zinc-600 leading-relaxed">
               Terhitung dari angkatan 2004 sampai hari ini, ada <span className="font-semibold text-rose-500 italic underline decoration-rose-300">loyalty rewards</span> khusus buat kamu.
             </p>
           </div>
 
           <div className="w-full max-w-md space-y-4">
             {/* Form & Tombol Alumni - Hidden Mode */}
-            <div className="w-full p-6 border-2 border-dashed border-zinc-200 dark:border-zinc-800 rounded-2xl bg-zinc-50/50 dark:bg-zinc-900/50 text-center">
+            <div className="w-full p-6 border-2 border-dashed border-zinc-200 rounded-2xl bg-zinc-50/50 text-center">
               <p className="text-sm font-medium text-zinc-500">
                 ✨ <span className="italic">Almost there!</span> Sistem klaim reward alumni lagi otw. Sabar ya kak!
               </p>
@@ -71,10 +71,10 @@ export default function Resident() {
 
             <div className="relative py-4 w-full">
               <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t border-zinc-200 dark:border-zinc-800"></span>
+                <span className="w-full border-t border-zinc-200"></span>
               </div>
               <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-white dark:bg-zinc-950 px-2 text-zinc-500">Atau hubungi kami</span>
+                <span className="bg-white px-2 text-zinc-500">Atau hubungi kami</span>
               </div>
             </div>
 
