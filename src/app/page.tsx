@@ -24,12 +24,12 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAFAF8] font-sans text-zinc-900">
+    <div className="home-content min-h-screen font-sans text-zinc-900">
       {/* Google Fonts */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@400;500;600&display=swap');
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .home-content, .home-content * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
           font-family: 'DM Sans', sans-serif;
@@ -98,8 +98,8 @@ export default function Home() {
         /* Main content */
         .main {
           max-width: 560px;
-          margin: 0 auto;
-          padding: 0 20px 60px;
+          margin: 0 auto -30px;
+          padding: 0 20px;
         }
 
         /* Title block */
