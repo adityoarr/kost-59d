@@ -3,26 +3,26 @@ import { UtensilsCrossed, CalendarDays, GraduationCap, Users, ChefHat, Clock, St
 const serviceTypes = [
   {
     icon: Clock,
-    label: 'Catering Harian',
+    label: 'Paket Makan Harian',
     desc: 'Makan enak tiap hari tanpa ribet masak sendiri',
     color: 'bg-orange-50 text-orange-500',
   },
   {
     icon: CalendarDays,
-    label: 'Catering Mingguan',
-    desc: 'Paket hemat sepekan, menu bervariasi biar gak bosen',
+    label: 'Paket Makan Mingguan',
+    desc: 'Hemat sepekan, menu ganti tiap hari biar gak bosen',
     color: 'bg-blue-50 text-blue-500',
   },
   {
     icon: Star,
-    label: 'Catering Bulanan',
-    desc: 'Solusi terbaik buat kamu yang pengen praktis setiap bulan',
+    label: 'Paket Makan Bulanan',
+    desc: 'Paling praktis dan hemat — cocok buat kamu yang super sibuk',
     color: 'bg-violet-50 text-violet-500',
   },
   {
     icon: GraduationCap,
-    label: 'Acara Kampus & Lainnya',
-    desc: 'Seminar, gathering, wisuda? Kita siap handle cateringnya',
+    label: 'Acara & Gathering',
+    desc: 'Wisuda, seminar, arisan? Kita siap handle makanannya',
     color: 'bg-green-50 text-green-500',
   },
 ];
@@ -35,15 +35,45 @@ export default function Service() {
         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-8 translate-x-8" />
         <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-6 -translate-x-4" />
         <p className="text-xs font-semibold text-orange-100 uppercase tracking-widest mb-1">Kost Putri 59D</p>
-        <h2 className="text-xl font-bold leading-tight mb-1">Catering Enak,<br/>Langsung ke Pintu Kamu 🍱</h2>
-        <p className="text-sm text-orange-100">Gak cuma buat residen — semua orang boleh pesan!</p>
+        <h2 className="text-xl font-bold leading-tight mb-1">Makan Enak, Tinggal Order! 🍱</h2>
+        <p className="text-sm text-orange-100">Gak cuma buat penghuni — siapapun boleh pesan!</p>
       </div>
+
+      {/* Open for Non-Penghuni */}
+      <section>
+        <div className="flex items-center gap-2 mb-3">
+          <span className="w-1 h-4 bg-rose-400 rounded-full" />
+          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Buat Siapa Aja?</h3>
+        </div>
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-50">
+          <div className="flex items-center gap-3 px-4 py-4">
+            <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center shrink-0">
+              <ChefHat className="w-5 h-5 text-orange-500" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-gray-800">Penghuni Kost 59D</p>
+              <p className="text-[11px] text-gray-400">Tinggal order dari kamar, makanan langsung nyampe</p>
+            </div>
+            <span className="ml-auto text-[10px] bg-orange-50 text-orange-600 font-bold px-2 py-1 rounded-full">Prioritas</span>
+          </div>
+          <div className="flex items-center gap-3 px-4 py-4">
+            <div className="w-10 h-10 rounded-xl bg-rose-50 flex items-center justify-center shrink-0">
+              <Users className="w-5 h-5 text-rose-500" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-gray-800">Umum / Non-Penghuni</p>
+              <p className="text-[11px] text-gray-400">Boleh banget! Hubungi kami dulu buat janji kirim ya</p>
+            </div>
+            <span className="ml-auto text-[10px] bg-rose-50 text-rose-500 font-bold px-2 py-1 rounded-full">Welcome</span>
+          </div>
+        </div>
+      </section>
 
       {/* Layanan */}
       <section>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-orange-500 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Pilihan Layanan</h3>
+          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Pilihan Paket</h3>
         </div>
         <div className="grid grid-cols-2 gap-3">
           {serviceTypes.map((s) => {
@@ -63,58 +93,28 @@ export default function Service() {
         </div>
       </section>
 
-      {/* Open for Non-Residen */}
-      <section>
-        <div className="flex items-center gap-2 mb-3">
-          <span className="w-1 h-4 bg-rose-400 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Terbuka untuk Semua</h3>
-        </div>
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-50">
-          <div className="flex items-center gap-3 px-4 py-4">
-            <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center shrink-0">
-              <ChefHat className="w-5 h-5 text-orange-500" />
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-gray-800">Residen Kost 59D</p>
-              <p className="text-[11px] text-gray-400">Akses mudah, pesan langsung dari kamar</p>
-            </div>
-            <span className="ml-auto text-[10px] bg-orange-50 text-orange-600 font-bold px-2 py-1 rounded-full">Prioritas</span>
-          </div>
-          <div className="flex items-center gap-3 px-4 py-4">
-            <div className="w-10 h-10 rounded-xl bg-rose-50 flex items-center justify-center shrink-0">
-              <Users className="w-5 h-5 text-rose-500" />
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-gray-800">Non-Residen</p>
-              <p className="text-[11px] text-gray-400">Kamu juga bisa pesan, kok! Hubungi kami dulu ya</p>
-            </div>
-            <span className="ml-auto text-[10px] bg-rose-50 text-rose-500 font-bold px-2 py-1 rounded-full">Welcome</span>
-          </div>
-        </div>
-      </section>
-
       {/* Coming Soon Menu */}
       <div className="bg-linear-to-br from-amber-50 to-orange-50 border border-amber-100 rounded-2xl p-4 flex gap-3 items-start">
         <span className="text-xl">🔔</span>
         <div>
           <p className="text-sm font-semibold text-amber-800">Menu & harga segera hadir!</p>
           <p className="text-xs text-amber-600 mt-0.5 leading-relaxed">
-            Daftar menu lengkap dan rincian harga lagi kita siapkan. Stay tuned untuk updatenya ya — dijamin worth it! 🙌
+            Daftar pilihan makan dan rincian harga lagi kita siapkan. Stay tuned untuk updatenya ya — dijamin worth it! 🙌
           </p>
         </div>
       </div>
 
       {/* CTA Contact */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex gap-3 items-center">
+      <a href="https://wa.me/6285755125790?text=Halo%2C%20ibu.%20Ada%20menu%20apa%20hari%20ini%20%3F" target='_blank' rel='noopener noreferrer' className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex gap-3 items-center">
         <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center shrink-0">
           <UtensilsCrossed className="w-5 h-5 text-green-500" />
         </div>
         <div className="flex-1">
           <p className="text-sm font-semibold text-gray-800">Tertarik? Yuk hubungi kami!</p>
-          <p className="text-[11px] text-gray-400">Tanya menu, harga, atau jadwal pengiriman</p>
+          <p className="text-[11px] text-gray-400">Tanya menu, harga, atau jadwal kirim makanan</p>
         </div>
         <span className="text-gray-300 text-lg">→</span>
-      </div>
+      </a>
     </div>
   );
 }

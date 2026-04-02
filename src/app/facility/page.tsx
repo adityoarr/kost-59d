@@ -120,13 +120,13 @@ export default function Facility() {
       </section>
 
       {/* CTA Note */}
-      <div className="bg-amber-50 border border-amber-100 rounded-2xl p-4 flex gap-3 items-start">
+      <a href="https://wa.me/6285755125790?text=Halo%2C%20bu.%20Apakah%20masih%20ada%20slot%20parkir%20sepeda%20motor%20%3F" target='_blank' rel='noopener noreferrer' className="bg-amber-50 border border-amber-100 rounded-2xl p-4 flex gap-3 items-start">
         <span className="text-xl">💬</span>
         <div>
-          <p className="text-sm font-semibold text-amber-800">Mau tanya soal parkir?</p>
+          <p className="text-sm font-semibold text-amber-800">Mau tanya soal parkir? Langsung disini</p>
           <p className="text-xs text-amber-600 mt-0.5">Slot parkir motor terbatas. Hubungi ibu/penjaga kost langsung untuk konfirmasi ketersediaan.</p>
         </div>
-      </div>
+      </a>
     </div>
   );
 }
