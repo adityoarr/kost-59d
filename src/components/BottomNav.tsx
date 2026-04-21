@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Building2, HandPlatter, Users } from 'lucide-react';
+import { Home, Building2, Users, Contact } from 'lucide-react';//HandPlatter
 
 const BottomNav = () => {
   const pathname = usePathname();
@@ -10,8 +10,9 @@ const BottomNav = () => {
   const navItems = [
     { name: 'Home', href: '/', icon: Home },
     { name: 'Fasilitas', href: '/facility', icon: Building2 },
-    { name: 'Layanan', href: '/service', icon: HandPlatter },
+    // { name: 'Layanan', href: '/service', icon: HandPlatter },
     { name: 'Residen', href: '/resident', icon: Users },
+    { name: 'Kontak', href: '/contact', icon: Contact },
   ];
 
   return (

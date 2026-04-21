@@ -9,6 +9,7 @@ const routeMeta: Record<string, { title: string; subtitle: string }> = {
   '/facility': { title: 'Fasilitas', subtitle: 'Semua yang kamu butuhkan' },
   '/service': { title: 'Layanan', subtitle: 'Bantuan & permintaan' },
   '/resident': { title: 'Residen', subtitle: 'Komunitas penghuni' },
+  '/contact': { title: 'Kontak', subtitle: 'Tanya-tanya langsung' },
 };
 
 const Header = () => {
