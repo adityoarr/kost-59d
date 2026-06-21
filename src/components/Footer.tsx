@@ -26,17 +26,17 @@ const Footer = () => {
         </span>
         {" "}·{" "}by{" "}
         <a
-          href="https://amartavecta.com/"
+          href="https://adityoarr.com/"
           target="_blank"
           rel="noopener noreferrer"
-          title="Amarta Vecta Dunya"
+          title="Adityo Ar Rafiuddin"
           style={{
             color: "#059669",
             fontWeight: 600,
             textDecoration: "none",
           }}
         >
-          Amarta Vecta Dunya
+          adityoarr
         </a>
       </p>
     </footer>
