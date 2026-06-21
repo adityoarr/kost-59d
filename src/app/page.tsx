@@ -533,7 +533,7 @@ export default function Home() {
           </div>
           <h2 className="section-title" style={{ marginBottom: 10 }}>Strategis Abis!</h2>
           <p className="nearby-intro">
-            Lo gak perlu jauh-jauh keluar zona nyaman. Semuanya ada di dekat sini:
+            Gak perlu jauh-jauh keluar zona nyaman. Semuanya ada di dekat sini:
           </p>
           <div className="chips">
             {nearbyPlaces.map((place) => (
@@ -566,21 +566,21 @@ export default function Home() {
                 <Coffee style={{ width: 20, height: 20, color: '#f97316' }} />
               </div>
               <p className="vibe-title">Cafe Vibes</p>
-              <p className="vibe-desc">Deretan kafe estetik & warmindo legend ada semua di ujung jalan.</p>
+              <p className="vibe-desc">Deretan kafe estetik & warmindo legend ada semua di sekitar kita.</p>
             </div>
             <div className="vibe-card">
               <div className="vibe-icon" style={{ background: '#F0FDF4' }}>
                 <Wifi style={{ width: 20, height: 20, color: '#10b981' }} />
               </div>
               <p className="vibe-title">Wi-Fi</p>
-              <p className="vibe-desc">Internet 24/7. Zoom, Netflix, deadline — semua lancar.</p>
+              <p className="vibe-desc">Internet 24/7 non-stop.</p>
             </div>
             <div className="vibe-card">
               <div className="vibe-icon" style={{ background: '#FFF1F2' }}>
                 <Lock style={{ width: 20, height: 20, color: '#f43f5e' }} />
               </div>
               <p className="vibe-title">Aman & Privat</p>
-              <p className="vibe-desc">Lingkungan yang tenang. Tidur nyenyak, itu pasti.</p>
+              <p className="vibe-desc">Lingkungan yang tenang, aman, dan nyaman.</p>
             </div>
           </div>
         </section>
@@ -600,26 +600,26 @@ export default function Home() {
               ⭐ Lebih dari 24 Tahun Pengalaman
             </div>
             <p className="about-text">
-              Kost Putri 59D bukan sekadar tempat tidur — ini adalah <strong>rumah kedua lo</strong> selama merantau di Malang. 
+              Kost Putri 59D bukan sekadar tempat tidur — ini adalah <strong>rumah kedua kamu</strong> selama merantau di Malang. 
               Kami paham banget kebutuhan anak kost, karena <strong>Ibu Kost sendiri pernah ngerasain jadi anak kost</strong> di masa mudanya. 
               Pengalaman itu yang bikin beliau tahu persis apa yang bikin kost itu nyaman, aman, dan bikin betah.
             </p>
             <p className="about-text" style={{ marginTop: 14 }}>
               Sudah <strong>hampir 25 tahun</strong> beliau mengelola kost ini dengan sepenuh hati — bukan cuma sewa kamar, 
               tapi ikut peduli dengan kehidupan penghuninya. Banyak yang datang sebagai mahasiswi baru, pergi sebagai 
-              sarjana sukses atau bahkan sebagai calon pengantin. Semua punya kenangan manis dari sini.
+              sarjana sukses, pekerja, dan bahkan sebagai calon pengantin. Semua punya kenangan manis dari sini.
             </p>
 
-            <div className="amenities">
+            {/* <div className="amenities">
               {["Wi-Fi"].map((item) => (
                 <span key={item} className="amenity-pill">
                   <span>✓</span> {item}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             <p className="about-owner">
-              &quot;Saya ingin setiap penghuni merasa aman dan nyaman, seperti di rumah sendiri.&quot; — Ibu Kost Putri 59D
+              &quot;Saya ingin setiap penghuni merasa aman dan nyaman, seperti di rumah sendiri.&quot; — Ibu Dina N.S. - Kost Putri 59D
             </p>
           </div>
         </section>

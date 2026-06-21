@@ -39,8 +39,8 @@ const info = [
   {
     icon: Clock,
     label: 'Jam Respon',
-    value: 'Setiap hari, 07.00 – 21.00',
-    sub: 'WhatsApp paling cepat dibalas',
+    value: 'Setiap hari, 24/7 Non-stop',
+    sub: 'WhatsApp paling cepat dibalas: 07.00 – 20.00',
     color: 'text-indigo-500',
     bg: 'bg-indigo-50',
   },
