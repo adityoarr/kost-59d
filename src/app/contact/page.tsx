@@ -57,7 +57,7 @@ export default function Contact() {
         <div className="absolute top-1/2 right-6 -translate-y-1/2">
           <span className="text-5xl opacity-30">💬</span>
         </div>
-        <p className="text-xs font-semibold text-purple-200 uppercase tracking-widest mb-1">Kost Putri 59D</p>
+        <p className="text-xs font-semibold text-purple-200 uppercase tracking-widest mb-1">Kost Putri</p>
         <h2 className="text-xl font-bold leading-tight mb-1">
           Yuk, Ngobrol Dulu!<br />Kami Siap Jawab 🙌
         </h2>

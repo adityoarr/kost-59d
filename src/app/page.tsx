@@ -3,7 +3,7 @@ import { MessageCircle, MapPin, GraduationCap, Coffee, ShieldCheck, Star, Wifi, 
 
 export default function Home() {
   const whatsappNumber = "6285755125790";
-  const message = encodeURIComponent("Halo Ibu, saya ingin tanya ketersediaan kamar di Kost Putri 59D.");
+  const message = encodeURIComponent("Halo Ibu, saya ingin tanya ketersediaan kamar di Kost Putri.");
   
   const lat = -7.955162704760403;
   const lon = 112.6091644792323;
@@ -451,7 +451,7 @@ export default function Home() {
       <section className="hero">
         <Image 
           src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=1200" 
-          alt="Kost Putri 59D Interior"
+          alt="Kost Putri Interior"
           fill
           sizes="100vw"
           priority
@@ -470,7 +470,7 @@ export default function Home() {
         <div className="title-block">
           <p className="title-eyebrow">✦ Ladies Housing ✦</p>
           <h1 className="title-main">
-            Kost Putri <em>59D</em>
+            Kost Putri
           </h1>
           <p className="title-sub">Est. 2002 · Malang, Jawa Timur</p>
           <div className="stars">
@@ -514,7 +514,7 @@ export default function Home() {
               src={embedUrl}
               allowFullScreen
               loading="lazy"
-              title="Lokasi Kost Putri 59D"
+              title="Lokasi Kost Putri"
             />
           </div>
 
@@ -600,7 +600,7 @@ export default function Home() {
               ⭐ Lebih dari 24 Tahun Pengalaman
             </div>
             <p className="about-text">
-              Kost Putri 59D bukan sekadar tempat tidur — ini adalah <strong>rumah kedua kamu</strong> selama merantau di Malang. 
+              Kost Putri bukan sekadar tempat tidur — ini adalah <strong>rumah kedua kamu</strong> selama merantau di Malang. 
               Kami paham banget kebutuhan anak kost, karena <strong>Ibu Kost sendiri pernah ngerasain jadi anak kost</strong> di masa mudanya. 
               Pengalaman itu yang bikin beliau tahu persis apa yang bikin kost itu nyaman, aman, dan bikin betah.
             </p>
@@ -619,7 +619,7 @@ export default function Home() {
             </div> */}
 
             <p className="about-owner">
-              &quot;Saya ingin setiap penghuni merasa aman dan nyaman, seperti di rumah sendiri.&quot; — Ibu Dina N.S. - Kost Putri 59D
+              &quot;Saya ingin setiap penghuni merasa aman dan nyaman, seperti di rumah sendiri.&quot; — Ibu Dina N.S. - Kost Putri
             </p>
           </div>
         </section>

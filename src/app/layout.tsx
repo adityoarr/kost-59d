@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kost Putri 59D - Ibu Dina Nurmala Sari",
-  description: "Kost Putri 59D - Ibu Dina Nurmala Sari di Jl. Sumbersari IV / 59D Kota Malang, Jawa Timur",
+  title: "Kost Putri - Ibu Dina Nurmala Sari",
+  description: "Kost Putri - Ibu Dina Nurmala Sari di Jl. Sumbersari IV / 59D Kota Malang, Jawa Timur",
 };
 
 export default function RootLayout({

@@ -56,7 +56,7 @@ export default function Facility() {
       <div className="relative rounded-2xl overflow-hidden bg-linear-to-br from-indigo-600 to-violet-600 p-5 text-white">
         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-8 translate-x-8" />
         <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-6 -translate-x-4" />
-        <p className="text-xs font-semibold text-indigo-200 uppercase tracking-widest mb-1">Kost Putri 59D</p>
+        <p className="text-xs font-semibold text-indigo-200 uppercase tracking-widest mb-1">Kost Putri</p>
         <h2 className="text-xl font-bold leading-tight mb-1">Fasilitas Lengkap,<br/>Hidup Makin Nyaman 🏠</h2>
         <p className="text-sm text-indigo-100">Semua yang kamu butuhkan udah ada di sini</p>
       </div>

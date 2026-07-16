@@ -22,7 +22,7 @@ const Footer = () => {
       >
         © 2026{" "}
         <span itemProp="copyrightHolder" style={{ color: "rgba(0,0,0,0.55)", fontWeight: 600 }}>
-          Kost Putri 59D
+          Kost Putri
         </span>
         {" "}·{" "}by{" "}
         <a
