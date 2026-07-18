@@ -5,11 +5,11 @@ import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 
 const routeMeta: Record<string, { title: string; subtitle: string }> = {
-  '/': { title: 'Kost 59D', subtitle: 'Malang, Jawa Timur' },
-  '/facility': { title: 'Fasilitas', subtitle: 'Semua yang kamu butuhkan' },
-  '/service': { title: 'Layanan', subtitle: 'Bantuan & permintaan' },
-  '/resident': { title: 'Residen', subtitle: 'Komunitas penghuni' },
-  '/contact': { title: 'Kontak', subtitle: 'Tanya-tanya langsung' },
+  '/': { title: 'Kost Putri', subtitle: 'Malang, Jawa Timur' },
+  '/facility': { title: 'Fasilitas Kost', subtitle: 'Nikmati kenyamanan maksimal' },
+  // '/service': { title: 'Pusat Layanan', subtitle: 'Ada yang bisa kami bantu?' },
+  // '/resident': { title: 'Penghuni', subtitle: 'Kenalan sama teman kost, yuk!' },
+  '/contact': { title: 'Hubungi Kami', subtitle: 'Punya pertanyaan? Yuk, ngobrol!' },
 };
 
 const Header = () => {

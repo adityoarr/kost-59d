@@ -3,7 +3,7 @@ import { MessageCircle, MapPin, GraduationCap, Coffee, ShieldCheck, Star, Wifi, 
 
 export default function Home() {
   const whatsappNumber = "6285755125790";
-  const message = encodeURIComponent("Halo Ibu, saya ingin tanya ketersediaan kamar di Kost Putri.");
+  const message = encodeURIComponent("Halo Ibu Dina, permisi. Saya mau tanya info ketersediaan kamar di Kost Putri, apakah saat ini masih ada yang kosong?");
   
   const lat = -7.955162704760403;
   const lon = 112.6091644792323;
@@ -460,7 +460,7 @@ export default function Home() {
         <div className="hero-overlay" />
         <div className="hero-badge">
           <div className="hero-badge-dot" />
-          Tersedia Kamar
+          Ada Kamar Kosong!
         </div>
       </section>
 
@@ -552,7 +552,7 @@ export default function Home() {
           <div className="section-header">
             <span className="section-label">✨ Vibe</span>
           </div>
-          <h2 className="section-title" style={{ marginBottom: 16 }}>Why You&apos;ll Love It Here</h2>
+          <h2 className="section-title" style={{ marginBottom: 16 }}>Kenapa Kamu Bakal Betah di Sini</h2>
           <div className="vibe-grid">
             <div className="vibe-card">
               <div className="vibe-icon" style={{ background: '#EFF6FF' }}>
@@ -580,7 +580,7 @@ export default function Home() {
                 <Lock style={{ width: 20, height: 20, color: '#f43f5e' }} />
               </div>
               <p className="vibe-title">Aman & Privat</p>
-              <p className="vibe-desc">Lingkungan yang tenang, aman, dan nyaman.</p>
+              <p className="vibe-desc">Lingkungan tenang dengan keamanan terjaga.</p>
             </div>
           </div>
         </section>
@@ -597,7 +597,7 @@ export default function Home() {
 
           <div className="about-card">
             <div className="about-experience-badge">
-              ⭐ Lebih dari 24 Tahun Pengalaman
+              ⭐ Dikelola Sepenuh Hati Sejak 2002
             </div>
             <p className="about-text">
               Kost Putri bukan sekadar tempat tidur — ini adalah <strong>rumah kedua kamu</strong> selama merantau di Malang. 

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Building2, Users, Contact } from 'lucide-react';//HandPlatter
+import { Home, Building2, Users, Contact, HandPlatter } from 'lucide-react';//HandPlatter
 
 const BottomNav = () => {
   const pathname = usePathname();
@@ -11,14 +11,14 @@ const BottomNav = () => {
     { name: 'Home', href: '/', icon: Home },
     { name: 'Fasilitas', href: '/facility', icon: Building2 },
     // { name: 'Layanan', href: '/service', icon: HandPlatter },
-    { name: 'Residen', href: '/resident', icon: Users },
-    { name: 'Kontak', href: '/contact', icon: Contact },
+    // { name: 'Penghuni', href: '/resident', icon: Users },
+    { name: 'Hubungi', href: '/contact', icon: Contact },
   ];
 
   return (
     <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 w-full max-w-md">
       <div className="mx-3 mb-3 bg-white/90 backdrop-blur-xl rounded-2xl shadow-lg shadow-black/10 border border-gray-100">
-        <div className="grid h-16 grid-cols-4 px-2">
+        <div className="grid h-16 grid-cols-3 px-2">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = pathname === item.href;

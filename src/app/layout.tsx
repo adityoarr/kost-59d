@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kost Putri - Ibu Dina Nurmala Sari",
-  description: "Kost Putri - Ibu Dina Nurmala Sari di Jl. Sumbersari IV / 59D Kota Malang, Jawa Timur",
+  title: "Kost Putri Ibu Dina Malang | Nyaman, Aman & Strategis",
+  description: "Cari kost putri strategis di Malang? Kost Putri Ibu Dina di Jl. Sumbersari IV/59D menawarkan fasilitas lengkap, aman, dan nyaman layaknya rumah sendiri. Yuk, cek sekarang!",
 };
 
 export default function RootLayout({
