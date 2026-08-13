@@ -25,10 +25,9 @@ export default function Home() {
 
   return (
     <div className="home-content min-h-screen font-sans text-zinc-900" style={{ margin: 0, padding: 0 }}>
-      {/* Google Fonts */}
+      {/* Font Playfair Display & DM Sans dimuat via next/font di layout.tsx
+          (lihat --font-playfair & --font-dm-sans) agar tidak render-blocking */}
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@400;500;600&display=swap');
-
         html, body {
           margin: 0 !important;
           padding: 0 !important;
@@ -38,12 +37,12 @@ export default function Home() {
         .home-content, .home-content * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-          font-family: 'DM Sans', sans-serif;
+          font-family: var(--font-dm-sans), sans-serif;
           background: #FAFAF8;
         }
 
         h1, h2, h3 {
-          font-family: 'Playfair Display', Georgia, serif;
+          font-family: var(--font-playfair), Georgia, serif;
         }
 
         /* Hero */
@@ -169,7 +168,7 @@ export default function Home() {
           padding: 18px 24px;
           font-size: 16px;
           font-weight: 700;
-          font-family: 'DM Sans', sans-serif;
+          font-family: var(--font-dm-sans), sans-serif;
           box-shadow: 0 8px 28px rgba(22,163,74,0.32);
           transition: transform 0.18s ease, box-shadow 0.18s ease;
           margin-bottom: 8px;
@@ -375,7 +374,7 @@ export default function Home() {
           position: absolute;
           top: -10px;
           right: 20px;
-          font-family: 'Playfair Display', serif;
+          font-family: var(--font-playfair), serif;
           font-size: 140px;
           color: rgba(255,255,255,0.06);
           line-height: 1;
@@ -451,7 +450,7 @@ export default function Home() {
       <section className="hero">
         <Image 
           src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=1200" 
-          alt="Kost Putri Interior"
+          alt="Interior kamar Kost Putri Ibu Dina di Malang, nyaman dan bersih"
           fill
           sizes="100vw"
           priority
@@ -471,6 +470,7 @@ export default function Home() {
           <p className="title-eyebrow">✦ Ladies Housing ✦</p>
           <h1 className="title-main">
             Kost Putri
+            <span className="sr-only"> Ibu Dina Malang</span>
           </h1>
           <p className="title-sub">Est. 2002 · Malang, Jawa Timur</p>
           <div className="stars">

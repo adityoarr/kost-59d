@@ -1,4 +1,12 @@
+import type { Metadata } from 'next';
 import { UtensilsCrossed, CalendarDays, GraduationCap, Users, ChefHat, Clock, Star } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Layanan Makan Kost Putri Malang',
+  description:
+    'Paket makan harian, mingguan, dan bulanan untuk penghuni maupun umum di Kost Putri Ibu Dina Malang. Cocok juga untuk acara & gathering. Hubungi kami untuk info menu dan harga.',
+  alternates: { canonical: '/service' },
+};
 
 const serviceTypes = [
   {
@@ -34,8 +42,8 @@ export default function Service() {
       <div className="relative rounded-2xl overflow-hidden bg-linear-to-br from-orange-500 to-rose-500 p-5 text-white">
         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-8 translate-x-8" />
         <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-6 -translate-x-4" />
-        <p className="text-xs font-semibold text-orange-100 uppercase tracking-widest mb-1">Kost Putri 59D</p>
-        <h2 className="text-xl font-bold leading-tight mb-1">Makan Enak, Tinggal Order! 🍱</h2>
+        <p className="text-xs font-semibold text-orange-100 uppercase tracking-widest mb-1">Kost Putri Ibu Dina Malang</p>
+        <h1 className="text-xl font-bold leading-tight mb-1">Makan Enak, Tinggal Order! 🍱</h1>
         <p className="text-sm text-orange-100">Gak cuma buat penghuni — siapapun boleh pesan!</p>
       </div>
 
@@ -43,7 +51,7 @@ export default function Service() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-rose-400 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Buat Siapa Aja?</h3>
+          <h2 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Buat Siapa Aja?</h2>
         </div>
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm divide-y divide-gray-50">
           <div className="flex items-center gap-3 px-4 py-4">
@@ -73,7 +81,7 @@ export default function Service() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-orange-500 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Pilihan Paket</h3>
+          <h2 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Pilihan Paket</h2>
         </div>
         <div className="grid grid-cols-2 gap-3">
           {serviceTypes.map((s) => {

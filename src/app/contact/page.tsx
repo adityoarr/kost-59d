@@ -1,4 +1,12 @@
+import type { Metadata } from 'next';
 import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Hubungi Kami',
+  description:
+    'Chat langsung dengan Ibu Kost via WhatsApp untuk cek ketersediaan kamar, harga, dan slot parkir di Kost Putri Ibu Dina, Jl. Sumbersari IV No. 59D Malang. Respon cepat setiap hari 07.00-20.00 WIB.',
+  alternates: { canonical: '/contact' },
+};
 
 const contacts = [
   {
@@ -59,10 +67,10 @@ export default function Contact() {
         <div className="absolute top-1/2 right-6 -translate-y-1/2">
           <span className="text-5xl opacity-30">💬</span>
         </div>
-        <p className="text-xs font-semibold text-purple-200 uppercase tracking-widest mb-1">Kost Putri</p>
-        <h2 className="text-xl font-bold leading-tight mb-1">
+        <p className="text-xs font-semibold text-purple-200 uppercase tracking-widest mb-1">Kost Putri Ibu Dina Malang</p>
+        <h1 className="text-xl font-bold leading-tight mb-1">
           Yuk, Ngobrol Dulu!<br />Kami Siap Bantu 🙌
-        </h2>
+        </h1>
         <p className="text-sm text-purple-100">
           Nggak perlu sungkan — tinggal tap, langsung terhubung via WhatsApp
         </p>
@@ -72,7 +80,7 @@ export default function Contact() {
       <section className="space-y-3">
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-violet-500 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Hubungi Kami</h3>
+          <h2 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Hubungi Kami</h2>
         </div>
 
         {contacts.map((c) => {
@@ -111,7 +119,7 @@ export default function Contact() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-rose-400 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Info Penting</h3>
+          <h2 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Info Penting</h2>
         </div>
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 divide-y divide-gray-50">
           {info.map((item) => {

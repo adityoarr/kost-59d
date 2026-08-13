@@ -1,4 +1,12 @@
+import type { Metadata } from 'next';
 import { Wifi, ParkingSquare, ShowerHead, Flame, Zap, Wind, Bed, BookOpen, Armchair, Package, Layers, AppWindow } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Fasilitas Kost Putri Malang',
+  description:
+    'WiFi 24/7, parkir motor berpagar, dapur & kompor, listrik-air all-in, kasur empuk, meja belajar, lemari, hingga area jemur luas — semua ada di Kost Putri Ibu Dina, Jl. Sumbersari IV/59D Malang.',
+  alternates: { canonical: '/facility' },
+};
 
 const facilities = [
   {
@@ -56,8 +64,8 @@ export default function Facility() {
       <div className="relative rounded-2xl overflow-hidden bg-linear-to-br from-indigo-600 to-violet-600 p-5 text-white shadow-md">
         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-8 translate-x-8" />
         <div className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-6 -translate-x-4" />
-        <p className="text-xs font-semibold text-indigo-200 uppercase tracking-widest mb-1">Kost Putri</p>
-        <h2 className="text-xl font-bold leading-tight mb-1">Fasilitas Lengkap,<br/>Hidup Makin Nyaman 🏠</h2>
+        <p className="text-xs font-semibold text-indigo-200 uppercase tracking-widest mb-1">Kost Putri Ibu Dina Malang</p>
+        <h1 className="text-xl font-bold leading-tight mb-1">Fasilitas Lengkap,<br/>Hidup Makin Nyaman 🏠</h1>
         <p className="text-sm text-indigo-100">Bawa koper aja, sisanya biar kami yang urus!</p>
       </div>
 
@@ -65,7 +73,7 @@ export default function Facility() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-indigo-500 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Fasilitas Umum</h3>
+          <h2 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Fasilitas Umum</h2>
         </div>
         <div className="grid grid-cols-2 gap-3">
           {facilities.map((f) => {
@@ -94,7 +102,7 @@ export default function Facility() {
       <section>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-4 bg-violet-500 rounded-full" />
-          <h3 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Fasilitas Kamar</h3>
+          <h2 className="text-sm font-bold text-gray-800 uppercase tracking-widest">Fasilitas Kamar</h2>
         </div>
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 divide-y divide-gray-50">
           {roomItems.map((item) => {
