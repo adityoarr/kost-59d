@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import MainLayout from "@/components/MainLayout";
+import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -144,9 +145,11 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-gray-100 flex justify-center min-h-screen antialiased">
-        <MainLayout>
-            {children}
-        </MainLayout>
+        <LanguageProvider>
+          <MainLayout>
+              {children}
+          </MainLayout>
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -3,16 +3,18 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Home, Building2, Users, Contact, HandPlatter } from 'lucide-react';//HandPlatter
+import { useTranslation } from '@/lib/i18n/LanguageContext';
 
 const BottomNav = () => {
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: 'Home', href: '/', icon: Home },
-    { name: 'Fasilitas', href: '/facility', icon: Building2 },
+    { name: t.nav.home, href: '/', icon: Home },
+    { name: t.nav.facility, href: '/facility', icon: Building2 },
     // { name: 'Layanan', href: '/service', icon: HandPlatter },
     // { name: 'Penghuni', href: '/resident', icon: Users },
-    { name: 'Hubungi', href: '/contact', icon: Contact },
+    { name: t.nav.contact, href: '/contact', icon: Contact },
   ];
 
   return (
